@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 try:
-
     link = "http://SunInJuly.github.io/execute_script.html"
     browser = webdriver.Chrome()
     browser.get(link)
@@ -24,7 +23,7 @@ try:
     button = browser.find_element_by_tag_name("button")
     browser.execute_script("return arguments[0].scrollIntoView(true);", button)
     button.click()
-finally:
 
+finally:
     time.sleep(10)
     browser.quit()
