@@ -14,8 +14,8 @@ try:
     x = browser.find_element(By.XPATH, "//input[@name='email']")
     x.send_keys("qweasd@qwdsa.qwe")
     element = browser.find_element(By.XPATH, "// input[ @ id = 'file']")
-    current_dir = os.path.abspath(os.path.dirname(__file__))  # получаем путь к директории текущего исполняемого файла
-    file_path = os.path.join(current_dir, 'file.txt')  # добавляем к этому пути имя файла
+    current_dir = os.path.abspath(os.path.dirname(__file__))
+    file_path = os.path.join(current_dir, 'file.txt')
     element.send_keys(file_path)
     button = browser.find_element_by_tag_name("button")
     button.click()
