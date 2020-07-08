@@ -21,6 +21,7 @@ try:
     q.send_keys(str(y))
     button = browser.find_element_by_tag_name("button")
     button.click()
+
 finally:
     time.sleep(10)
     browser.quit()
